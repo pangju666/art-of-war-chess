@@ -17,8 +17,6 @@ public abstract class BaseChess {
     protected List<Position> historyPositions;
     /** 当前坐标 */
     protected Position currentPosition;
-    /** 伙伴棋 */
-    protected BaseChess partnerChess;
     /** 棋子颜色 */
     protected Color color;
 
@@ -36,11 +34,11 @@ public abstract class BaseChess {
         this.currentPosition = position;
         this.color = color;
         this.historyPositions = new LinkedList<>();
-        this.partnerChess = null;
     }
 
     /**
      * 移动棋子
+     *
      * @param position
      */
     public abstract void move(Position position);
@@ -51,21 +49,6 @@ public abstract class BaseChess {
      * @param chess
      */
     protected abstract void attack(BaseChess chess);
-
-    /**
-     * 组合棋子
-     * @param chess
-     */
-    protected void combine(BaseChess chess) {
-
-    }
-
-    /**
-     * 取消组合
-     */
-    protected void unCombine(BaseChess chess) {
-
-    }
 
     /**
      * 悔棋

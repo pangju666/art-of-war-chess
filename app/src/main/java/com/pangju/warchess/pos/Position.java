@@ -11,28 +11,11 @@ import java.util.Objects;
  */
 public class Position {
     /** X坐标 */
-    private int xPos;
+    private final int xPos;
     /** Y坐标 */
-    private int yPos;
-
-    public Position() {
-        this.xPos = 0;
-        this.yPos = 0;
-    }
+    private final int yPos;
 
     public Position(int xPos, int yPos) {
-        this.xPos = xPos;
-        this.yPos = yPos;
-    }
-
-    /**
-     * 移动坐标
-     *
-     * @param xPos X坐标
-     * @param yPos Y坐标
-     * @since 1.0
-     */
-    public void move(int xPos, int yPos) {
         this.xPos = xPos;
         this.yPos = yPos;
     }
