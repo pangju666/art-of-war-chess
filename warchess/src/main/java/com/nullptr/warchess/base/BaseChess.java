@@ -1,4 +1,4 @@
-package com.pangju.warchess.base;
+package com.nullptr.warchess.base;
 
 import com.pangju.warchess.pos.Position;
 

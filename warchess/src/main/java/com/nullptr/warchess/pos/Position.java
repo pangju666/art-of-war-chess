@@ -1,4 +1,4 @@
-package com.pangju.warchess.pos;
+package com.nullptr.warchess.pos;
 
 import java.util.Objects;
 

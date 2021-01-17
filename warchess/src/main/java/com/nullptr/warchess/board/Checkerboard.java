@@ -1,4 +1,4 @@
-package com.pangju.warchess.board;
+package com.nullptr.warchess.board;
 
 import android.os.Build;
 
